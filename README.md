@@ -22,6 +22,7 @@ The objective of this repo is to:
 ## 📂 Projects
 
 ### 1. Thrift Store DB Design
+
 Design of a database for an Instagram-based store selling:
 - Thrifted (unique) items  
 - Handmade (multi-quantity) products  
@@ -29,7 +30,35 @@ Design of a database for an Instagram-based store selling:
 **Key Concepts Practiced:**
 - Handling many-to-many relationships using junction tables  
 - Separating order-level and item-level data  
-- Inventory and stock tracking
+- Inventory and stock tracking  
+
+#### ER Diagram
+![ER Diagram](./THRIFT%20STORE%20DB%20DESIGN/diagram-export-4-6-2026-9_45_25-PM.png)
+
+---
+### 2. Fitness Coaching Platform DB Design
+
+Database for a fitness influencer platform where:
+- Clients subscribe to training plans  
+- Trainers manage multiple clients  
+- Progress, payments, and consultations are tracked  
+
+**Core Features Modeled:**
+- Plan subscription lifecycle (active, expired, cancelled)  
+- Client progress tracking over time  
+- Weekly check-ins for accountability  
+- Payment tracking per subscription  
+- Consultation scheduling system  
+
+**Key Concepts Practiced:**
+- Multi-entity relationships (client–trainer–plan)  
+- Subscription-based architecture  
+- Temporal data handling (progress, check-ins, appointments)  
+- Use of enums for controlled states  
+- Separation of payments, subscriptions, and scheduling  
+
+#### ER Diagram
+![ER Diagram](./Fitness%20Influencer%20Coaching%20Platform%20DB%20DESIGN/diagram-export-4-7-2026-9_19_25-PM.png)
 
 ---
 
@@ -67,4 +96,3 @@ For each problem:
 - Improve constraints and normalization  
 - Include SQL schema and sample queries  
 - Explore indexing and performance considerations  
-
