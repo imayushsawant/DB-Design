@@ -22,6 +22,7 @@ The objective of this repo is to:
 ## 📂 Projects
 
 ### 1. Thrift Store DB Design
+
 Design of a database for an Instagram-based store selling:
 - Thrifted (unique) items  
 - Handmade (multi-quantity) products  
@@ -29,7 +30,10 @@ Design of a database for an Instagram-based store selling:
 **Key Concepts Practiced:**
 - Handling many-to-many relationships using junction tables  
 - Separating order-level and item-level data  
-- Inventory and stock tracking
+- Inventory and stock tracking  
+
+#### ER Diagram
+![ER Diagram](./THRIFT%20STORE%20DB%20DESIGN/diagram-export-4-6-2026-9_45_25-PM.png)
 
 ---
 
@@ -67,4 +71,3 @@ For each problem:
 - Improve constraints and normalization  
 - Include SQL schema and sample queries  
 - Explore indexing and performance considerations  
-
