@@ -3,6 +3,9 @@
 ## Problem
 Design a database for a growing Instagram-based thrift + handmade store.
 
+## ER Diagram
+![ER Diagram](./diagram-export-4-6-2026-9_45_25-PM.png)
+
 ## Key Challenges
 - Thrift items are unique (single quantity)
 - Handmade items can have multiple units
