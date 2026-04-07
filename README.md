@@ -58,7 +58,7 @@ Database for a fitness influencer platform where:
 - Separation of payments, subscriptions, and scheduling  
 
 #### ER Diagram
-![ER Diagram](./Fitness%20Influencer%20Coaching%20Platform%20DB%20DESIGN/diagram-export-4-7-2026-9_19_25-PM.png)
+![ER Diagram](./Fitness%20Coaching%20DB%20DESIGN/diagram-export-4-7-2026-9_19_25-PM.png)
 
 ---
 
