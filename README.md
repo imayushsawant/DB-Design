@@ -88,6 +88,34 @@ Database for a clinic system where:
 
 ---
 
+### 4. Parking Management System DB Design
+
+Database design for a large-scale event parking system (e.g., Comic-Con) where:
+- Vehicles enter and exit across multiple days  
+- Parking is organized into zones and levels  
+- Spots are assigned dynamically based on availability and category  
+- Payments are processed per parking session  
+
+**Core Features Modeled:**
+- Vehicle entry and exit tracking using parking sessions  
+- Dynamic parking spot allocation  
+- Multi-zone and multi-level parking structure  
+- Reserved parking categories (VIP, EV, staff, creators, etc.)  
+- Payment tracking per session  
+- Ticket generation for each parking entry  
+
+**Key Concepts Practiced:**
+- Separation of static vs dynamic entities (spots vs sessions)  
+- Lifecycle modeling (entry → parking → exit → payment)  
+- Normalization using category tables (vehicle type, spot type)  
+- Avoiding derived data storage (availability from active sessions)  
+- Reusability of parking spots across multiple sessions  
+- Role-based abstraction (visitor and staff under user)  
+
+#### ER Diagram  
+![ER Diagram](./Parking%20Management%20System%20DB%20DESIGN/diagram-export-4-9-2026-8_41_21-PM.png)
+
+---
 ## 🧠 Concepts Covered
 
 - Primary Keys (PK) & Foreign Keys (FK)  
@@ -115,10 +143,3 @@ For each problem:
 5. Refine based on edge cases  
 
 ---
-
-## 🚀 Future Work
-
-- Add more real-world scenarios (e.g., food delivery, ride sharing, social media)  
-- Improve constraints and normalization  
-- Include SQL schema and sample queries  
-- Explore indexing and performance considerations  
