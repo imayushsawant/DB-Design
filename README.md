@@ -61,6 +61,32 @@ Database for a fitness influencer platform where:
 ![ER Diagram](./Fitness%20Coaching%20DB%20DESIGN/diagram-export-4-7-2026-9_19_25-PM.png)
 
 ---
+### 3. Clinic Management Platform DB Design
+
+Database for a clinic system where:
+- Patients book appointments based on required specialization  
+- Doctors are assigned during consultations  
+- Diagnostic tests are prescribed and reports are generated  
+- Payments are handled per consultation  
+
+**Core Features Modeled:**
+- Appointment vs consultation separation (intent vs actual visit)  
+- Doctor assignment based on specialization  
+- Diagnostic test lifecycle (prescription → execution → report)  
+- Payment handling for complete consultation (including tests)  
+- Feedback system for consultations  
+
+**Key Concepts Practiced:**
+- Ownership-based relationship design  
+- Avoiding redundant foreign keys using derivation  
+- Normalization using separate specialization table  
+- Modeling real-world flow of a clinic system  
+- Handling derived data (total billing via consultation + tests)  
+
+#### ER Diagram  
+![ER Diagram](./Clinic%20management%20platform%20DB%20DESIGN/diagram-export-4-8-2026-11_44_01-PM.png)
+
+---
 
 ## 🧠 Concepts Covered
 
