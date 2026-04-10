@@ -24,4 +24,4 @@ Database design for a multi-building elevator management system used in large in
 - Designing for scalability across multiple buildings  
 
 #### ER Diagram  
-![ER Diagram](./Elevator%20management%20system%20DB%20DESIGN/diagram-export-4-10-2026-11_06_26-PM.png)
+![ER Diagram](/Elevator%20management%20system%20DB%20DESIGN/diagram-export-4-10-2026-11_06_26-PM.png)
