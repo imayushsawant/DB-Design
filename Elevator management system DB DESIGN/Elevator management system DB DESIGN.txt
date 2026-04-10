@@ -1,0 +1,52 @@
+buildings [icon: building, color: blue] {
+  building_id serial pk
+  building_name string notnull
+}
+floors [icon: layers, color: blue] {
+  floor_id serial pk
+  building_id fk
+  floor_number int notnull
+}
+elevators [icon: arrow-up-down, color: purple] {
+  elevator_id serial pk
+  building_id fk
+  status enum(idle, moving, maintenance )
+}
+elevator_floors [icon: link, color: purple] {
+  id serial pk
+  floor_id fk
+  elevator_id fk
+}
+
+rides [icon: navigation, color: green] {
+  ride_id serial pk
+  elevator_id fk
+  request_id fk
+  started_at timestamp
+  completed_at timestamp
+}
+requests [icon: send, color: orange] {
+  request_id serial pk
+  source_floor_id  fk
+  destination_floor_id fk
+  requested_at timestamp
+  status enum (pending, assigned, completed)
+  direction enum (up, down)
+}
+maintenance [icon: tool, color: red] {
+  maintenance_id serial pk
+  elevator_id fk
+  maintenance_start_date timestamp
+  maintenance_end_date timestamp
+  reason string notnull
+  status enum(scheduled, ongoing, completed)
+}
+buildings.building_id < elevators.building_id
+buildings.building_id < floors.building_id
+elevators.elevator_id < rides.elevator_id
+elevators.elevator_id < maintenance.elevator_id
+elevators.elevator_id - elevator_floors.elevator_id
+floors.floor_id - elevator_floors.floor_id
+requests.request_id - rides.request_id
+requests.destination_floor_id - floors.floor_id
+floors.floor_id - requests.source_floor_id
